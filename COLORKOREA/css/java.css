@@ -92,6 +92,9 @@ nav {
     text-decoration: none;
     color: black;
 }
+.leftarea li {
+    border-radius: 1px solid #000;
+}
 
 /* 중앙 이미지  */
 .mainimage {
