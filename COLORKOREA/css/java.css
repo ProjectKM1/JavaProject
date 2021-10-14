@@ -95,6 +95,11 @@ nav {
     transform: skewY(5deg);
 }
 
+
+/* .sidecontent1 h1 {
+
+} */
+
 .month_select li:first-child {
     padding-top: 10px;
 }
@@ -103,13 +108,10 @@ nav {
     text-decoration: none;
     color: black;
 }
-<<<<<<< HEAD
 
 .leftarea li {
     border-radius: 1px solid #000;
 }
-=======
->>>>>>> parent of 1ed0f71 (Ver 0.21)
 
 
 /* 중앙 이미지  */
