@@ -95,6 +95,11 @@ nav {
     transform: skewY(5deg);
 }
 
+
+/* .sidecontent1 h1 {
+
+} */
+
 .month_select li:first-child {
     padding-top: 10px;
 }
