@@ -14,38 +14,25 @@
 // })
 
 function fnMove(seq) {
-    var offset = $("#window" + seq).offset();
+    var offset = $(".sub" + seq).offset();
     $('html, body').animate({
         scrollTop: offset.top
     }, 500);
 }
+//스크롤 따라다니는 메뉴박스 만들기
+onscroll = function() {
+    var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if(nVScroll > 40) $(".Menu").css("position", "fixed"); 
+    else $(".Menu").css("position", "relative");
+  };
 
-$(function() {
-    var $areaItem = $('.leftarea ul li a')
-
-    // 링크 가로채기
-    $areaItem.click(function(e){
-        e.preventDefault();                     //클릭시 Gyungki로 이동하는 기능 제거
-        var newURL = $(this).attr('href');      //클릭한 href 따오기
-        pageChange(newURL);                     // pageChange 함수 사용 (밑에 설명)
-       
-    })
-
-    
-
-    function pageChange(newURL) {
-        $('body').addClass('animation');                             //animation class 삽입(animaiton 시작)
-
-        var container = $('<div id="loadingContainer"></div>');     //container 변수 선언
-        container.load(newURL, function(){                          //변수안에 따온 페이지 저장
-            $('.mainimage').html(container.find('.mainimage > *'));     //$(java.html(넣을 페이지의 위치)).html(변수.find(가져올 페이지 위치))
-            $('.Menu').html(container.find('.Menu > *'));
-
-           
-            setTimeout(function(){                                  //animaiton class 삭제 (animation 끝)
-                $('body').removeClass('animation');
-            },1000 )
-            
-        })
-    }
-})
+// // GSAP & ScrollToPlugin 사용
+// // 메인화면
+// const fadeEls = document.querySelectorAll('.mainimage')
+// fadeEls.forEach(function(fadeEl, index){
+//     //gsap.to(요소명, 지속시간(초), 옵션)
+//     gsap.to(fadeEl, 1, {
+//         delay : index *.7, //지연시간 0.7 1.4 2.1 2.7
+//         opacity : 1
+//     })
+// })

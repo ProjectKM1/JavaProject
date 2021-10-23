@@ -9,13 +9,21 @@
 
     <link rel="shortcut icon" href="../image/icon.ico">
     <link rel="stylesheet" href="../css/gyung.css">
-
+    
+    <!-- Google Fonts 고딕나눔 등록-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!-- font-family: 'Nanum Gothic', sans-serif; 사용 -->
+
+    <!-- GSAP & ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
 
     <script src="../js/flat.min.js"></script>
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -28,29 +36,15 @@
         </header>
         <nav>
             <ul class="Menu">
-                <li><a href="#">미식</a></li>
-                <li><a href="#">어드벤쳐</a></li>
-                <li class="dropBox">
-                    <a href="#">미정(dropmenu)</a>
-                    <span class="dropmenu"> 
-						<span><a href="#">미정</a></span>
-                    <span><a href="#">미정</a></span>
-                    <span><a href="#">미정</a></span>
-                    </span>
-                </li>
-                <li class="dropBox">
-                    <a href="">미정(dropmenu)</a>
-                    <span class="dropmenu"> 
-						<span><a href="#">미정</a></span>
-                    <span><a href="#">미정</a></span>
-                    </span>
-                </li>
-                <li><a href="#">자연</a></li>
-                <li><a href="#">힐링</a></li>
+                <li id="bt01" onclick="fnMove('1')"><a href="#">미식</a></li>
+                <li id="bt02" onclick="fnMove('2')"><a href="#">어드벤쳐</a></li>
+                <li id="bt03" onclick="fnMove('3')"><a href="#">자연</a></li>
+                <li id="bt04" onclick="fnMove('4')"><a href="#">힐링</a></li>
             </ul>
         </nav>
         <div class="innerwrap">
-        <section class="gallary_section">
+        <div class="sub1">
+        <section class="gallary_section1">
             <ul class="gallary_list">
                 <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
                 <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
@@ -109,6 +103,25 @@
                 </ul>
             </div>
         </section>
+        </div>
+        <div class="sub2">
+        <section class="gallary_section2">
+            <ul class="gallary_list">
+                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+            </ul>
+        </section>
+        </div>
+        <div class="sub3">
+
+        </div>
+        <div class="sub4">
+
+        </div>
         </div>
         <footer>
 

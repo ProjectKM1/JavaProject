@@ -9,10 +9,17 @@
 
     <link rel="shortcut icon" href="../image/icon.ico">
     <link rel="stylesheet" href="../css/java.css">
+    <link rel="stylesheet" href="../css/chart.css">
 
+    <!-- Google Fonts 고딕나눔 등록-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!-- font-family: 'Nanum Gothic', sans-serif; 사용 -->
+
+    <!-- GSAP & ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
 
     <script src="../js/flat.min.js"></script>
     <script src="../js/jquery.min.js"></script>
@@ -51,6 +58,7 @@
             </ul>
         </nav>
         <section class="content">
+            <section class="left_content">
             <div class="sidecontent1">
                 <h1>Month Select</h1>
                 <ul class="month_select">
@@ -77,17 +85,23 @@
                     <li><a href="">전라남도</a></li>
                 </ul>
             </div>
+            </section>
             <div class="mainimage">
                 <img src="../image/제작자료1.png" alt="">
             </div>
+            <section class="right_content">
             <div class="sidecontent2">
                 <h1>외국인 방문수</h1>
-                <ul class="country">
-                    <li>Japan</li>
-                    <li>USA</li>
-                    <li>China</li>
-                    <li>Korean(교포)</li>
-                </ul>
+                <div class="charts">
+                    <span>Japan</span>
+                    <div class="charts__chart chart--p80 chart--blue" data-percent></div><!-- /.charts__chart -->
+                    <span>USA</span>
+                    <div class="charts__chart chart--p60 chart--green" data-percent></div><!-- /.charts__chart -->
+                    <span>China</span>
+                    <div class="charts__chart chart--p40 chart--red" data-percent></div><!-- /.charts__chart -->
+                    <span>Korean(교포)</span>
+                    <div class="charts__chart chart--p20 chart--yellow" data-percent></div><!-- /.charts__chart -->
+                </div>
             </div>
             <div class="rightarea">
                 <ul>
@@ -97,6 +111,7 @@
                     <li><a href="">제주도</a></li>
                 </ul>
             </div>
+            </section>
         </section>
 
         <footer>
