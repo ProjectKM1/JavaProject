@@ -12,12 +12,10 @@ header {
     display: flex;
     justify-content: center;
 }
-
 .Head a {
     text-decoration: none;
     color: black;
 }
-
 .Head:hover {
     background-color: aliceblue;
 }
@@ -29,15 +27,19 @@ nav {
     position: relative;
 }
 .Menu {
+    position: absolute;
     list-style-type: none;
     font-weight: bold;
     /*글자 굵기 */
     width: 80%;
     display: flex;
+    right: 0;
     flex-flow: row nowrap;
     float: right;
 }
-
+.Menu li {
+    border-radius: 1px solid #000;
+}
 .Menu li a {
     display: inline-block;
     text-decoration: none;
@@ -45,10 +47,10 @@ nav {
     padding: 10px 20px;
     margin: 0 auto;
 }
-
 .Menu li a:hover {
     color: rgb(21, 228, 131);
 }
+
 /* content */
 .content {
     display: flex;

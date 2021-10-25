@@ -13,12 +13,14 @@
 //     $("body").stop().animate({ scrollTop: position.top }, 500)
 // })
 
+/* 클릭시 해당 위치로 이동 */
 function fnMove(seq) {
     var offset = $(".sub" + seq).offset();
     $('html, body').animate({
         scrollTop: offset.top
     }, 500);
 }
+
 //스크롤 따라다니는 메뉴박스 만들기
 onscroll = function() {
     var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;

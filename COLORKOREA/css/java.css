@@ -8,19 +8,31 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 header {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 10px
+    margin: 10px;
 }
 .Head a {
     text-decoration: none;
     color: black;
 }
-
 .Head:hover {
     background-color: aliceblue;
 }
-
+.reg {
+    display: flex;
+    position: absolute;
+    right: 15%;
+}
+.reg li {
+    list-style-type: none;
+    padding: 5px;
+}
+.reg li a {
+    text-decoration: none;
+    color: #000;
+}
 
 /* 메뉴 부분 스타일 */
 

@@ -9,6 +9,7 @@
 
     <link rel="shortcut icon" href="../image/icon.ico">
     <link rel="stylesheet" href="../css/gyung.css">
+    <link rel="stylesheet" href="../css/chart.css">
     
     <!-- Google Fonts 고딕나눔 등록-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,12 +88,16 @@
             </div>
             <div class="sidecontent2">
                 <h1>외국인 방문수</h1>
-                <ul class="country">
-                    <li>Japan</li>
-                    <li>USA</li>
-                    <li>China</li>
-                    <li>Korean(교포)</li>
-                </ul>
+                <div class="charts">
+                    <span>Japan</span>
+                    <div class="charts__chart chart--p80 chart--blue" data-percent></div><!-- /.charts__chart -->
+                    <span>USA</span>
+                    <div class="charts__chart chart--p60 chart--green" data-percent></div><!-- /.charts__chart -->
+                    <span>China</span>
+                    <div class="charts__chart chart--p40 chart--red" data-percent></div><!-- /.charts__chart -->
+                    <span>Korean(교포)</span>
+                    <div class="charts__chart chart--p20 chart--yellow" data-percent></div><!-- /.charts__chart -->
+                </div>
             </div>
             <div class="rightarea">
                 <ul>
