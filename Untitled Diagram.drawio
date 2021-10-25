@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-25T11:30:30.314Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="j3OmfjoBpyaFXuNJqp9J" version="15.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-25T11:34:47.163Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="648aAYBj-yepJ42CJoxB" version="15.5.9" type="github">
   <diagram id="wEUWDhrLtQ7qWJUwgqZ3" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1600" math="0" shadow="0">
       <root>
@@ -57,6 +57,9 @@
         </mxCell>
         <mxCell id="2wDuuPoUSpi1u29aejhP-8" value="회원인가?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="940" y="982" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2wDuuPoUSpi1u29aejhP-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="2wDuuPoUSpi1u29aejhP-15" target="2wDuuPoUSpi1u29aejhP-56">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2wDuuPoUSpi1u29aejhP-15" value="관리자 홈페이지" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="750" y="490" width="140" height="146" as="geometry" />
@@ -129,6 +132,9 @@
         </mxCell>
         <mxCell id="2wDuuPoUSpi1u29aejhP-55" value="홈페이지 수정권한" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="765" y="532" width="109" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="2wDuuPoUSpi1u29aejhP-56" value="등록 게시판" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1034" y="533" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
