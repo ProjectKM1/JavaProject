@@ -23,6 +23,7 @@
 
     <script src="../js/flat.min.js"></script>
     <script src="../js/jquery.min.js"></script>
+    <script defer src="../js/java.js"></script>
 </head>
 
 <body>
@@ -68,18 +69,18 @@
             <div class="sidecontent1">
                 <h1>Month Select</h1>
                 <ul class="month_select">
-                    <li><a href="#">Jan</a></li>
-                    <li><a href="#">Feb</a></li>
-                    <li><a href="#">Mar</a></li>
-                    <li><a href="#">Apr</a></li>
-                    <li><a href="#">May</a></li>
-                    <li><a href="#">Jun</a></li>
-                    <li><a href="#">Jul</a></li>
-                    <li><a href="#">Aug</a></li>
-                    <li><a href="#">Sep</a></li>
-                    <li><a href="#">Oct</a></li>
-                    <li><a href="#">Nov</a></li>
-                    <li><a href="#">Dec</a></li>
+                    <li id="jan">Jan</li>
+                    <li id="feb"><a href="#">Feb</a></li>
+                    <li id="mar"><a href="#">Mar</a></li>
+                    <li id="apr"><a href="#">Apr</a></li>
+                    <li id="may"><a href="#">May</a></li>
+                    <li id="jun"><a href="#">Jun</a></li>
+                    <li id="jul"><a href="#">Jul</a></li>
+                    <li id="aug"><a href="#">Aug</a></li>
+                    <li id="sep"><a href="#">Sep</a></li>
+                    <li id="oct"><a href="#">Oct</a></li>
+                    <li id="nov"><a href="#">Nov</a></li>
+                    <li id="dec"><a href="#">Dec</a></li>
                 </ul>
             </div>
             <div class="leftarea">
@@ -100,13 +101,13 @@
                 <h1>외국인 방문수</h1>
                 <div class="charts">
                     <span>Japan</span>
-                    <div class="charts__chart chart--p32 chart--blue" data-percent></div><!-- /.charts__chart -->
+                    <div id="japen" class="charts__chart chart--p32 chart--blue" data-percent></div><!-- /.charts__chart -->
                     <span>USA</span>
-                    <div class="charts__chart chart--p60 chart--green" data-percent></div><!-- /.charts__chart -->
+                    <div id="usa" class="charts__chart chart--p60 chart--green" data-percent></div><!-- /.charts__chart -->
                     <span>China</span>
-                    <div class="charts__chart chart--p40 chart--red" data-percent></div><!-- /.charts__chart -->
+                    <div id="china" class="charts__chart chart--p40 chart--red" data-percent></div><!-- /.charts__chart -->
                     <span>Korean(교포)</span>
-                    <div class="charts__chart chart--p20 chart--yellow" data-percent></div><!-- /.charts__chart -->
+                    <div id="kor" class="charts__chart chart--p20 chart--yellow" data-percent></div><!-- /.charts__chart -->
                 </div>
             </div>
             <div class="rightarea">
