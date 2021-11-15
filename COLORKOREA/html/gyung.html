@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../image/icon.ico">
     <link rel="stylesheet" href="../css/gyung.css">
     <link rel="stylesheet" href="../css/chart.css">
-    
+
     <!-- Google Fonts 고딕나눔 등록-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +18,32 @@
     <!-- font-family: 'Nanum Gothic', sans-serif; 사용 -->
 
     <!-- GSAP & ScrollToPlugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+        integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+        crossorigin="anonymous"></script>
+
+    <!-- ScrollMagic 사용-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Material Icon 사용-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- lodash 사용   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
 
     <script src="../js/flat.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/main.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
+
 <body>
     <div class="wrap">
         <header>
@@ -44,93 +62,89 @@
             </ul>
         </nav>
         <div class="innerwrap">
-        <div class="sub1">
-        <section class="gallary_section1">
-            <ul class="gallary_list">
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-            </ul>
-        </section>
-        <section class="space"></section>
-        <section class="content">
-            <div class="sidecontent1">
-                <h1>Month Select</h1>
-                <ul class="month_select">
-                    <li><a href="#">Jan</a></li>
-                    <li><a href="#">Feb</a></li>
-                    <li><a href="#">Mar</a></li>
-                    <li><a href="#">Apr</a></li>
-                    <li><a href="#">May</a></li>
-                    <li><a href="#">Jun</a></li>
-                    <li><a href="#">Jul</a></li>
-                    <li><a href="#">Aug</a></li>
-                    <li><a href="#">Sep</a></li>
-                    <li><a href="#">Oct</a></li>
-                    <li><a href="#">Nov</a></li>
-                    <li><a href="#">Dec</a></li>
-                </ul>
+            <div class="sub1">
+                <section class="gallary_section1">
+                    <ul class="gallary_list">
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                    </ul>
+                </section>
+                <section class="content">
+                    <div class="sidecontent1">
+                        <h1>Month Select</h1>
+                        <ul class="month_select">
+                            <li><a href="#">Jan</a></li>
+                            <li><a href="#">Feb</a></li>
+                            <li><a href="#">Mar</a></li>
+                            <li><a href="#">Apr</a></li>
+                            <li><a href="#">May</a></li>
+                            <li><a href="#">Jun</a></li>
+                            <li><a href="#">Jul</a></li>
+                            <li><a href="#">Aug</a></li>
+                            <li><a href="#">Sep</a></li>
+                            <li><a href="#">Oct</a></li>
+                            <li><a href="#">Nov</a></li>
+                            <li><a href="#">Dec</a></li>
+                        </ul>
+                    </div>
+                    <div class="mainimage">
+                        <img src="../image/제작자료3.png" alt="">
+                    </div>
+                    <div class="sidecontent2">
+                        <h1>외국인 방문수</h1>
+                        <div class="charts">
+                            <span>Japan</span>
+                            <div class="charts__chart chart--p80 chart--blue" data-percent></div>
+                            <!-- /.charts__chart -->
+                            <span>USA</span>
+                            <div class="charts__chart chart--p60 chart--green" data-percent></div>
+                            <!-- /.charts__chart -->
+                            <span>China</span>
+                            <div class="charts__chart chart--p40 chart--red" data-percent></div><!-- /.charts__chart -->
+                            <span>Korean(교포)</span>
+                            <div class="charts__chart chart--p20 chart--yellow" data-percent></div>
+                            <!-- /.charts__chart -->
+                        </div>
+                    </div>
+                    <div class="rightarea">
+                        <ul>
+                            <li><a href="">강원도</a></li>
+                            <li><a href="">경상북도</a></li>
+                            <li><a href="">경상남도</a></li>
+                            <li><a href="">제주도</a></li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-            <div class="leftarea">
-                <ul>
-                    <li><a href="./gyung.html">경기도</a></li>
-                    <li><a href="">충청북도</a></li>
-                    <li><a href="">충청남도</a></li>
-                    <li><a href="">전라북도</a></li>
-                    <li><a href="">전라남도</a></li>
-                </ul>
+            <div class="sub2">
+                <section class="gallary_section2">
+                    <ul class="gallary_list">
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                        <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
+                    </ul>
+                </section>
             </div>
-            <div class="mainimage">
-                <img src="../image/제작자료3.png" alt="">
-            </div>
-            <div class="sidecontent2">
-                <h1>외국인 방문수</h1>
-                <div class="charts">
-                    <span>Japan</span>
-                    <div class="charts__chart chart--p80 chart--blue" data-percent></div><!-- /.charts__chart -->
-                    <span>USA</span>
-                    <div class="charts__chart chart--p60 chart--green" data-percent></div><!-- /.charts__chart -->
-                    <span>China</span>
-                    <div class="charts__chart chart--p40 chart--red" data-percent></div><!-- /.charts__chart -->
-                    <span>Korean(교포)</span>
-                    <div class="charts__chart chart--p20 chart--yellow" data-percent></div><!-- /.charts__chart -->
-                </div>
-            </div>
-            <div class="rightarea">
-                <ul>
-                    <li><a href="">강원도</a></li>
-                    <li><a href="">경상북도</a></li>
-                    <li><a href="">경상남도</a></li>
-                    <li><a href="">제주도</a></li>
-                </ul>
-            </div>
-        </section>
-        </div>
-        <div class="sub2">
-        <section class="gallary_section2">
-            <ul class="gallary_list">
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-                <li><a href=""><img src="../image/gyungki1.png" alt=""></a></li>
-            </ul>
-        </section>
-        </div>
-        <div class="sub3">
+            <div class="sub3">
 
-        </div>
-        <div class="sub4">
+            </div>
+            <div class="sub4">
 
-        </div>
+            </div>
         </div>
         <footer>
 
         </footer>
+    </div>
+    <div id="to-top">
+        <div class="material-icons">arrow_upward</div>
     </div>
 </body>
 

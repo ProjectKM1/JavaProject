@@ -22,11 +22,11 @@ function fnMove(seq) {
 }
 
 //스크롤 따라다니는 메뉴박스 만들기
-onscroll = function() {
-    var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    if(nVScroll > 40) $(".Menu").css("position", "fixed"); 
-    else $(".Menu").css("position", "relative");
-  };
+// onscroll = function() {
+//     var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+//     if(nVScroll > 40) $(".Menu").css("position", "fixed"); 
+//     else $(".Menu").css("position", "relative");
+//   };
 
 // // GSAP & ScrollToPlugin 사용
 // // 메인화면
@@ -38,3 +38,28 @@ onscroll = function() {
 //         opacity : 1
 //     })
 // })
+const toTopEl = document.querySelector("#to-top")
+
+window.addEventListener('scroll', _.throttle(function(){
+    // console.log(scrollY)
+    if(scrollY>500){
+      //Home버튼 보여지기
+      gsap.to(toTopEl, .2, {      
+        x:0
+      })  
+    }
+    else{
+      //Home버튼 숨기기
+      gsap.to(toTopEl, .2, {      
+        x:100
+      })
+    }
+  }, 300)) //300:300밀리세컨드
+  
+  toTopEl.addEventListener('click', ()=>{
+    // gsap.to(요소명, 지속시간(초), 옵션)
+    gsap.to(window, .7, {
+      scrollTo: 0
+    });
+  })
+  

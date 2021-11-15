@@ -27,7 +27,7 @@ nav {
     position: relative;
 }
 .Menu {
-    position: absolute;
+    position: fixed;
     list-style-type: none;
     font-weight: bold;
     /*글자 굵기 */
@@ -151,3 +151,20 @@ h1 {
 .leftarea li {
     border-radius: 1px solid #000;
 }
+
+#to-top{
+    width: 42px;
+    height: 42px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+  }
