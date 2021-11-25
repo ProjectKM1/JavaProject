@@ -24,12 +24,21 @@ header {
     text-decoration: none;
     color: white;
     line-height: 50px;
+<<<<<<< HEAD
 }
 
 .Head a h1{
     font-family: 'Mochiy Pop P One', sans-serif;
 }
 
+=======
+}
+
+.Head a h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+>>>>>>> 9faea26bd3f26a9720e25f8a59087a133dc7e619
 .Head:hover {
     background-color: #423F3E;
     color: #171010;
