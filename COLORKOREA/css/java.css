@@ -7,23 +7,37 @@ body {
     background-image: url(../image/body_bg.png);
 } */
 .wrap {
-    background-color: #171010;;
+    background-color: #171010;
     width: 100%;
     margin: 0 auto;
     font-family: 'Nanum Gothic', sans-serif;
 }
 header {
     width: 100%;
+    height: 70px;
     display: flex;
     justify-content: center;
     margin: 10px;
 }
+
 .Head a {
     text-decoration: none;
     color: white;
+    line-height: 50px;
 }
+
+.Head a h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
 .Head:hover {
     background-color: #423F3E;
+    color: #171010;
+}
+
+.Head a:hover {
+    background-color: #423F3E;
+    color: #171010;
 }
 
 /* content */
@@ -79,9 +93,11 @@ header {
 
 .area {
     position: absolute;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
+    box-sizing: border-box;
     font-size: 30px;
+    padding: 10px;
     color: white;
     font-family: 'Mochiy Pop P One', sans-serif;
 }
@@ -91,13 +107,29 @@ header {
     top: 0;
 }
 
+.btn {
+    width: 90px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+}
+
 #seoul {
     top: 50px;
     left: 300px;
 }
 
 #seoul_red{
-
+    top: 50px;
+    left: 300px;
 }
 
 #gyeonggi {
@@ -143,6 +175,32 @@ header {
     top: 650px;
 }
 
+#gangwon{
+    top: 250px;
+    right: 200px;
+}
+
+#gangwon_red {
+    left: 550px;
+}
+
+#gyeongsangbuk{
+    right: 200px;
+    top: 450px;
+}
+
+#gyeongsangbuk_red{
+    left: 550px;
+}
+
+#gyeongsangnam{
+    top: 650px;
+    right: 200px;
+}
+
+#gyeongsangnam_red{
+    left: 550px;
+}
 
 /* 오른쪽 사이드 내용 */
 .right_content {
