@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    display: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Head a {
+    text-decoration: none;
+    color: black;
+}
+
+.Head:hover {
+    background-color: aliceblue;
+}
+
+
+/* 메뉴 부분 스타일 */
+
+nav {
+    width: 100%;
+    position: fixed;
+}
+
+
+/* .Menu {
+    list-style-type: none;
+    font-weight: bold;
+    width: 80%;
+    display: flex;
+    flex-flow: ;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px 0;
+} */
+
+.Menu {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px 0
+}
+
+.Menu li {
+    display: fixed;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section {
+    margin-top: 15%;
+    width: 100%;
+}
+
+#window1 {
+    background-color: orange;
+    height: 935px;
+}
+
+div img {
+    margin-top: 10%;
+}
+
+#window2 {
+    background-color: pink;
+    height: 938px;
+}
+
+#window3 {
+    background-color: gray;
+    height: 938px;
+}
