@@ -75,7 +75,18 @@ nav {
 }
 .gallary_section {
     display: flex;
-    width: 50%;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.box{
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 3% 1.25% 3% 1.25%;
+    width: 30%;
+    height: 30%;
+    /* background: url(); */
 }
 .gallary_list {
     list-style-type: none;
@@ -84,7 +95,7 @@ nav {
     margin: 10px;
     float: left;
     position: static;
-    width: 30%;
+    width: 50%;
 }
 
 /* adventure*/
