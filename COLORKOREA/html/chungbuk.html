@@ -8,7 +8,7 @@
     <title>Color Korea</title>
 
     <link rel="shortcut icon" href="../image/icon.ico">
-    <link rel="stylesheet" href="../css/gyung.css">
+    <link rel="stylesheet" href="../css/localpage.css">
     <link rel="stylesheet" href="../css/chart.css">
 
     <!-- Google Fonts 고딕나눔 등록-->
@@ -42,9 +42,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
         integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
         crossorigin="anonymous"></script>
+
     <script src="../js/jquery.min.js"></script>
     <!-- <script defer src="../js/main.js"></script> -->
-    <script defer src="../js/gyung.js"></script>
+    <script defer src="../js/localpage.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
@@ -59,16 +60,24 @@
             <nav>
                 <ul class="Menu">
                     <li id="bt01" onclick="fnMove('1')"><a href="#">Food</a></li>
-                    <li id="bt02" onclick="fnMove('2')"><a href="#">adventure</a></li>
-                    <li id="bt03" onclick="fnMove('3')"><a href="#">Nature</a></li>
+                    <li id="bt02" onclick="fnMove('2')"><a href="#">Activity</a></li>
+                    <li id="bt03" onclick="fnMove('3')"><a href="#">Healing</a></li>
                 </ul>
             </nav>
         </header>
 
+        <div>
+            <ul class="SideMenu">
+                <li id="bt01" onclick="fnMove('1')"><a href="#"><img class="food_icon" src="../image/food_icon.png" width="40px"><br>Food</a></li>
+                <li id="bt02" onclick="fnMove('2')"><a href="#"><img class="activity_icon" src="../image/activity_icon.jpg" width="60px"><br>Activity</a></li>
+                <li id="bt03" onclick="fnMove('3')"><a href="#"><img class="Healing_icon" src="../image/healing_icon.png" width="60px"><br>Healing</a></li>
+            </ul>
+        </div>
+
         <div class="innerwrap">
             <div class="sub1">
                 <div class="about_area">
-                    <h2>계속 생각나는 경기도 맛집 <b>TOP 6</b></h2>
+                    <h2>GyungGi Food <b>TOP 6</b></h2>
                     <div class="about_box">
                         <ul class="place_list box_inner clear">
                             <li><a href="#"
@@ -126,6 +135,7 @@
             </div>
             <div class="sub2">
                 <section class="gallary_section2">
+                    <h2>GyungGi - Do Activity <b>TOP 3</b></h2>
                     <ul class="program_list clear">
                         <li>
                             <img class="img_place" src="../image/gyungki1.png" alt="이응노 미술관" />
@@ -154,42 +164,44 @@
                             </div>
                             <p class="btn_more"><a href="javascript:;">더보기</a></p>
                         </li>
+                        
+                    </ul>
+                </section>
+            </div>
+            <div class="sub3">
+                <section class="gallary_section2">
+                    <h2>GyungGi-Do Healing <b>TOP 3</b></h2>
+                    <ul class="program_list clear">
                         <li>
-                            <img class="img_place" src="../image/gyungki1.png" alt="백사실 현통사" />
-                            <h3>백사실 현통사</h3>
-                            <p class="subttl">2018.11 ~ 2018.12</p>
-                            <div class="program_content">
-                                <p>서울 종로구 부암동에서는 주택가에서 길 하나만 건너 들어가면 깨끗하고 맑은 계곡을 걸을 수 있다. <span class="subtxt">백사실 가는 길에 사찰도 있어주지만 더 들어가면 조선후기 별서 백석동천을 만날 수 있다.</span></p>
-                            </div>
-                            <p class="btn_more"><a href="javascript:;">더보기</a></p>
-                        </li>
-                        <li>
-                            <img class="img_place" src="../image/gyungki1.png" alt="통영국제음악당" />
-                            <h3>통영국제음악당</h3>
+                            <img class="img_place" src="../image/gyungki1.png" alt="이응노 미술관" />
+                            <h3>이응노 미술관</h3>
                             <p class="subttl">2019.01 ~ 2019.03</p>
                             <div class="program_content">
-                                <p>작곡가 윤이상을 기리는 음악당으로 소리와 함께 수려한 경치도 즐길 수 있다. <span class="subtxt">봄과 가을에 통영국제음악제가 열리며 가을에는 윤이상국제음악콩쿠르가 열린다.</span></p>
+                                <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span class="subtxt">대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
                             </div>
                             <p class="btn_more"><a href="javascript:;">더보기</a></p>
                         </li>
                         <li>
-                            <img class="img_place" src="../image/gyungki1.png" alt="아침고요수목원" />
-                            <h3>아침고요수목원</h3>
-                            <p class="subttl">2019.01 ~ 2019.02</p>
+                            <img class="img_place" src="../image/gyungki1.png" alt="김유정문학촌" />
+                            <h3>김유정문학촌</h3>
+                            <p class="subttl">2019.01 ~ 2019.03</p>
                             <div class="program_content">
-                                <p>경기도 가평군 축령산에는 조용한 아침의 나라의 아기자기한 정원이 있다. <span class="subtxt">너무 거대하지 않으면서도 수려한 산림욕장을 원한다면 아침고요수목원을 산책하라.</span></p>
+                                <p>강원도 춘천시에서는 김유정이 우리나라 제일의 소설가인 것처럼 정성을 다해 김유정 문학촌을 꾸몄다. <span class="subtxt">기념관은 물론이고 소설의 마지막 장면을 실제크기 동상으로 재연하기도 했다. 우리를 감동시킨 많은 다른 문학가, 예술인들도 해당 지자체에서 성의를 다해 기렸으면 하는 바램이다.</span></p>
+                            </div>
+                            <p class="btn_more"><a href="javascript:;">더보기</a></p>
+                        </li>
+                        <li>
+                            <img class="img_place" src="../image/gyungki1.png" alt="책과 인쇄 박물관" />
+                            <h3>책과 인쇄 박물관</h3>
+                            <p class="subttl">2019.01 ~ 2019.03</p>
+                            <div class="program_content">
+                                <p>생각보다 작은 공간이지만 활자가 문명에 끼친 어마어마한 영향력이 초판본들에서 느껴진다. <span class="subtxt">박물만 볼 수 있는 것이 아니라 아직까지도 그 시절에 인쇄 과정을 손수 체험 할 수 있는 시간을 제공하고 있다.</span></p>
                             </div>
                             <p class="btn_more"><a href="javascript:;">더보기</a></p>
                         </li>
                         
                     </ul>
                 </section>
-            </div>
-            <div class="sub3">
-
-            </div>
-            <div class="sub4">
-
             </div>
         </div>
         <footer>

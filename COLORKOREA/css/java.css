@@ -12,7 +12,8 @@ body {
 } */
 .wrap {
     background-color: #171010;
-    width: 1900px;
+    width: 1903px;
+    height: 1200px;
     margin: 0 auto;
     font-family: 'Nanum Gothic', sans-serif;
     z-index: -10;

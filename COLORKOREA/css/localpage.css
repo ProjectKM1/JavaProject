@@ -7,6 +7,10 @@
 a{
     text-decoration: none;
 }
+
+li {
+    list-style-type: none;
+}
 .wrap {
     background-color: #423F3E;
     width: 100%;
@@ -21,7 +25,7 @@ header {
     background-color: #171010;
 }
 .Head {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 .Head a {
     text-decoration: none;
@@ -43,11 +47,11 @@ nav {
     position: relative;
 }
 .Menu {
-    position: fixed;
+    position: absolute;
     list-style-type: none;
     font-weight: bold;
     /*글자 굵기 */
-    width: 85%;
+    width: 100%;
     display: flex;
     right: 0;
     flex-flow: row nowrap;
@@ -69,13 +73,49 @@ nav {
     color: rgb(21, 228, 131);
 }
 
+.food_icon {
+    margin-left: 10px;
+}
+.nature_icon{
+    margin-left: 8px;
+}
+.SideMenu {
+    position: fixed;
+    border: 5px solid #000;
+    border-radius: 30px;
+    background: white;
+    list-style-type: none;
+    font-weight: bold;
+    /*글자 굵기 */
+    right: 10px;
+    top: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 99;
+    opacity: 0;
+    
+}
+.SideMenu li {
+    border-radius: 1px solid #000;
+}
+.SideMenu li a {
+    display: inline-block;
+    text-decoration: none;
+    
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+.SideMenu li a:hover {
+    color: rgb(21, 228, 131);
+}
+
 
 /* 왼쪽 내용 부분 스타일 food */
 .sub1 {
     display: flex;
     flex-flow: row nowrap;
     background-color: #423F3E;
-    height: 1100px;
+    height: 1300px;
 }
 .gallary_section {
     display: flex;
@@ -83,6 +123,9 @@ nav {
     width: 100%;
 }
 
+.gallary_section2 {
+    width: 100%;
+}
 .box{
     border: 1px solid black;
     box-sizing: border-box;
@@ -102,7 +145,7 @@ nav {
     width: 50%;
 }
 
-.about_area h2 {padding:55px 0 105px; text-align:center; font-size:40px;}
+.about_area h2 {padding:55px 0 105px; text-align:center; font-size:40px; color: white;}
 .about_area .place_list li {float:left; width:30%; margin-left:2%; margin-bottom: 2%; text-align:center; position:relative; top:-50px;}
 .about_area .place_list li .img_topplace {width:100%;}
 .about_area .place_list li h3 {font-weight:bold; font-size:18px; padding-top:25px; color:#000;}
@@ -111,12 +154,12 @@ nav {
 
 /* popup_base */
 .popup_base {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:200; display:none;}
-.popup_base .pop_content {position:relative; width:580px; margin:200px auto 0; box-sizing:border-box; background:#fff;}
+.popup_base .pop_content {position:relative; width:580px; margin:200px auto 0; box-sizing:border-box; background:#f4f0e9;}
 .pop_content .btn_xpop {position:absolute; right:0; top:-55px;}
 .pop_content .btn_xpop a {display:block; width:45px; height:45px; text-align:center; text-indent:-9999px; overflow:hidden; background:url(../image/btn_xpop.png) no-repeat; background-size:45px;}
 .pop_content .pop_list li {padding:36px; text-align:center;}
 .pop_content .pop_list li + li {background:#f4f0e9;}
-.pop_content .pop_list li + li + li {background:#fff;}
+.pop_content .pop_list li + li + li {background:#f4f0e9;}
 .pop_content .pop_list li h2.tit_pop {padding:10px 0 24px; font-weight:bold; font-size:30px; letter-spacing:-2px;}
 .pop_content .pop_list li img.pop_img {width:100%;}
 .pop_content .pop_list li .pop_txt {padding-top:15px}
@@ -125,12 +168,14 @@ nav {
 /* adventure*/
 .sub2 {
     display: flex;
+    width: 100%;
     flex-flow: row nowrap;
     background-color: #2b2928;
     height: 800px;
 }
 
-.program_list li {float:left; width:31.5%; margin:0 0.9%;}
+.gallary_section2 h2 {padding:55px 0 105px; text-align:center; font-size:40px; color: white;}
+.program_list li {float:left; width:30%; margin-left:2%; margin-bottom: 2%; text-align:center; position:relative; top:-50px;}
 .program_list li:nth-child(3n+1) {clear:both;}
 .program_list li .img_place {display:block;  width:100%;}
 .program_list li h3 {padding:40px 0 0; font-weight:bold; font-size:22px;}
@@ -196,4 +241,5 @@ h1 {
     bottom: 30px;
     right: 30px;
     z-index: 9;
+    opacity: 0;
   }
