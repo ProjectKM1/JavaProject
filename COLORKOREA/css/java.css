@@ -62,16 +62,27 @@ header {
     color: white;
 }
 .sidecontent1 {
+    padding-top: 50px;
     display: block;
     text-align: center;
-    height: 400px;
 }
-.month_select li:first-child {
-    padding-top: 10px;
+.month_select {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
 }
-.month_select li a {
+.month_select div{
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin: 2%;
+    width: 29%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.month_select div a {
     text-decoration: none;
     color: white;
+    
 }
 
 
