@@ -1,9 +1,0 @@
-package user;
-
-public class UserDAO {
-
-	private String rname;
-	private String raddress;
-	private String rphone;
-	
-}

@@ -1,9 +1,0 @@
-package restaurant;
-
-public class RDAO {
-
-	private String rname;
-	private String raddress;
-	private String rphone;
-	
-}
