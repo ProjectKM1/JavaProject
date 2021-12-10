@@ -1,0 +1,12 @@
+127.0.0.1 - - [07/Dec/2021:14:11:53 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:11:54 +0900] "GET /ColorKorea/html/main.jsp HTTP/1.1" 200 7466
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:11:54 +0900] "GET /ColorKorea/css/java.css HTTP/1.1" 200 3607
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:11:54 +0900] "GET /ColorKorea/css/chart.css HTTP/1.1" 200 27554
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:11:54 +0900] "GET /ColorKorea/js/jquery.min.js HTTP/1.1" 200 96385
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:11:54 +0900] "GET /ColorKorea/js/java.js HTTP/1.1" 200 6991
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:11:54 +0900] "GET /ColorKorea/image/%EC%A0%9C%EC%9E%91%EC%9E%90%EB%A3%8C1.png HTTP/1.1" 200 82586
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:11:54 +0900] "GET /ColorKorea/image/red.png HTTP/1.1" 200 659
+127.0.0.1 - - [07/Dec/2021:14:40:51 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:40:53 +0900] "GET /ColorKorea/connection2.jsp HTTP/1.1" 200 510
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:51:24 +0900] "GET /ColorKorea/connection2.jsp HTTP/1.1" 200 621
+0:0:0:0:0:0:0:1 - - [07/Dec/2021:14:51:48 +0900] "GET /ColorKorea/connection2.jsp HTTP/1.1" 200 527

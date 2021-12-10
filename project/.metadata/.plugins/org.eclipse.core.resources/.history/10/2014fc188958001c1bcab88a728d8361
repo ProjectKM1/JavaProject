@@ -1,0 +1,55 @@
+package restaurant;
+
+public class RDTO {
+
+	private int seq;
+	private String name;
+	private String address;
+	private String phone;
+	private String content;
+	private String area;
+	public int getSeq() {
+		return seq;
+	}
+	public void setSeq(int seq) {
+		this.seq = seq;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
+	}
+	@Override
+	public String toString() {
+		return "RDTO [seq=" + seq + ", name=" + name + ", address=" + address + ", phone=" + phone + ", content="
+				+ content + ", area=" + area + "]";
+	}
+	
+	
+}
+
