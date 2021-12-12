@@ -2,10 +2,10 @@
    $('.program_list li .btn_more a').click(function () {
        if ($(this).parent().parent().find('.subtxt').css('display') == 'none') {
            $(this).parent().parent().find('.subtxt').css('display', 'inline');
-           $(this).text('접기');
+           $(this).text('Fold');
        } else {
            $(this).parent().parent().find('.subtxt').css('display', 'none');
-           $(this).text('더보기');
+           $(this).text('More');
        }
    });
 
