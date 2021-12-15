@@ -9,7 +9,6 @@ public class RDTO {
 	private String content;
 	private String area;
 	private String time1;
-	private String time2;
 	private String url;
 	
 	public int getSeq() {
@@ -55,12 +54,6 @@ public class RDTO {
 	public void setTime1(String time1) {
 		this.time1 = time1;
 	}
-	public String getTime2() {
-		return time2;
-	}
-	public void setTime2(String time2) {
-		this.time2 = time2;
-	}
 	public String getUrl() {
 		return url;
 	}
@@ -70,7 +63,7 @@ public class RDTO {
 	@Override
 	public String toString() {
 		return "RDTO [seq=" + seq + ", name=" + name + ", address=" + address + ", phone=" + phone + ", content="
-				+ content + ", area=" + area + ", time1=" + time1 + ", time2=" + time2 + ", url=" + url + "]";
+				+ content + ", area=" + area + ", time1=" + time1 + ", url=" + url + "]";
 	}
 	
 	

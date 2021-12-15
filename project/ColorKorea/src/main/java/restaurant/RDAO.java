@@ -18,7 +18,7 @@ public class RDAO {
 	private ResultSet rs = null;
 
 	// SQL 명령어
-	private final String Restaurant_SELECT = "SELECT SEQ, NAME, ADDRESS, PHONE, CONTENT, AREA, TIME1, TIME2, URL FROM RESTAURANT ";
+	private final String Restaurant_SELECT = "SELECT SEQ, NAME, ADDRESS, PHONE, CONTENT, AREA, TIME1, URL FROM RESTAURANT WHERE AREA = ? ";
 	
 	/**
 	 * 로그인
@@ -32,6 +32,7 @@ public class RDAO {
 		try {
 			conn = DatabaseUtil.getConnection();
 			stmt = conn.prepareStatement(Restaurant_SELECT);
+			stmt.setString(1, dto.getArea());
 		
 			rs = stmt.executeQuery();
 			
@@ -44,7 +45,6 @@ public class RDAO {
 				restaurant.setContent(rs.getString("CONTENT"));
 				restaurant.setArea(rs.getString("AREA"));
 				restaurant.setTime1(rs.getString("TIME1"));
-				restaurant.setTime2(rs.getString("TIME2"));
 				restaurant.setUrl(rs.getString("URL"));
 				
 				restaurantList.add(restaurant);
