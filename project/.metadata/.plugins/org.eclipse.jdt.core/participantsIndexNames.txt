@@ -1,5 +1,5 @@
 INDEX VERSION 1.131
-C:\Users\inste\Documents\GitHub\JavaProject\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2680321606.index
+C:\Users\user\Desktop\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2680321606.index
 \ColorKorea\src\main\java
-C:\Users\inste\Documents\GitHub\JavaProject\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\573230378.index
+C:\Users\user\Desktop\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\573230378.index
 \ColorKorea\src\main\java
