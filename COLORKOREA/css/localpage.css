@@ -146,7 +146,7 @@ nav {
 }
 
 .about_area h2 {padding:55px 0 105px; text-align:center; font-size:40px; color: wheat;}
-.about_area .place_list li {float:left; width:30%; margin-left:2%; margin-bottom: 2%; text-align:center; position:relative; top:-50px;}
+.about_area .place_list li {float:left; width:30%; margin-left:2%; margin-bottom: 10%; text-align:center; position:relative; top:-50px;}
 .about_area .place_list li .img_topplace {width:100%;}
 .about_area .place_list li h3 {font-weight:bold; font-size:18px; padding-top:25px; color:wheat;}
 .about_area .place_list li p.txt {box-sizing:border-box; padding:10px 30px 0; width:100%; overflow:hidden; word-break:keep-all; line-height:1.8; color:rgb(190, 172, 137);}
