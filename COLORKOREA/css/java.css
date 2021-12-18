@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -6,10 +6,69 @@
 a {
     text-decoration: none;
 }
-/* 
-body {
-    background-image: url(../image/body_bg.png);
-} */
+
+
+/* button style*/
+
+button,
+button::after {
+    transition: all 1.0s;
+}
+
+button {
+    background: none;
+    width: 100px;
+    padding: 10px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    cursor: pointer;
+}
+
+button::before,
+button::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+button:hover {
+    color: #000;
+}
+
+.btn-style1::after {
+    height: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.btn-style1:hover:after {
+    height: 100%;
+}
+
+.btn-style2::after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+}
+
+.btn-style2:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
 .wrap {
     background-color: #171010;
     width: 1903px;
@@ -18,6 +77,7 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     z-index: -10;
 }
+
 header {
     width: 100%;
     height: 70px;
@@ -31,16 +91,17 @@ header {
     line-height: 50px;
 }
 
-.Head a h1{
+.Head a h1 {
     font-family: 'Mochiy Pop P One', sans-serif;
 }
-
 
 .Head a:hover {
     color: #171010;
 }
 
+
 /* content */
+
 .content {
     display: flex;
     flex-flow: row nowrap;
@@ -48,11 +109,12 @@ header {
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
-    z-index: -1;
+    z-index: -2;
 }
 
 
 /* 왼쪽사이드 내용 */
+
 .left_content {
     order: 1;
     display: flex;
@@ -61,17 +123,25 @@ header {
     background-color: #423F3E;
     color: white;
 }
+
 .sidecontent1 {
     padding-top: 50px;
     display: block;
     text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
+
+.sidecontent1 h1 {
+    margin: 20px;
+}
+
 .month_select {
     display: flex;
     width: 100%;
     flex-flow: row wrap;
 }
-.month_select div{
+
+.month_select div {
     box-sizing: border-box;
     padding: 10px 10px;
     margin: 2%;
@@ -79,10 +149,10 @@ header {
     border: 1px solid white;
     cursor: pointer;
 }
+
 .month_select div a {
     text-decoration: none;
     color: white;
-    
 }
 
 
@@ -123,11 +193,18 @@ header {
     font-size: 20px;
 }
 
+.area button {
+    padding: 5px;
+    margin-top: 20px;
+}
+
 .red {
     position: absolute;
     top: 0;
 }
 
+
+/*
 .btn {
     width: 100%;
     padding: 5px;
@@ -142,14 +219,14 @@ header {
     box-sizing: border-box;
     display: block;
     transition: .4s;
-}
+}*/
 
 #seoul {
     top: 50px;
     left: 450px;
 }
 
-#seoul_red{
+#seoul_red {
     top: 470px;
     left: 530px;
 }
@@ -164,12 +241,12 @@ header {
     left: 520px;
 }
 
-#chungbuk{
+#chungbuk {
     top: 50px;
     left: 200px;
 }
 
-#chungbuk_red{
+#chungbuk_red {
     top: 530px;
     left: 570px;
 }
@@ -179,10 +256,11 @@ header {
     left: 150px;
 }
 
-#chungnam_red{
+#chungnam_red {
     top: 540px;
     left: 530px;
 }
+
 #jeollanam {
     top: 650px;
     left: 250px;
@@ -203,7 +281,7 @@ header {
     left: 550px;
 }
 
-#gangwon{
+#gangwon {
     top: 250px;
     right: 200px;
 }
@@ -213,22 +291,22 @@ header {
     left: 620px;
 }
 
-#gyeongbuk{
+#gyeongbuk {
     right: 200px;
     top: 450px;
 }
 
-#gyeongbuk_red{
+#gyeongbuk_red {
     top: 560px;
     left: 630px;
 }
 
-#gyeongnam{
+#gyeongnam {
     top: 650px;
     right: 300px;
 }
 
-#gyeongnam_red{
+#gyeongnam_red {
     top: 630px;
     left: 630px;
 }
@@ -239,7 +317,9 @@ line {
     left: 100px;
 }
 
+
 /* 오른쪽 사이드 내용 */
+
 .right_content {
     order: 3;
     display: flex;
@@ -248,7 +328,12 @@ line {
     background-color: #423F3E;
     color: white;
 }
+
 .sidecontent2 {
     padding: 10px 5%;
-    height: 400px;
+    margin-top: 100px;
+}
+
+.sidecontent2 h1 {
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
