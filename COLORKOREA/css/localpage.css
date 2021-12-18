@@ -402,6 +402,7 @@ nav {
 .program_list li .img_place {
     display: block;
     width: 100%;
+    height: 300px;
 }
 
 .program_list {
