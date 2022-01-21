@@ -260,7 +260,7 @@ header .main-menu .item:hover .item__contents .contents__menu>ul>li ul li:hover 
 header .main-menu .item:hover .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
-  background-image: url(/images/main_menu_pattern.jpg);
+  background-image: url(../images/main_menu_pattern.jpg);
 }
 
 header .main-menu .item:hover .item__contents .contents__texture h4 {
@@ -291,7 +291,7 @@ header .badges .badge {
 /* VISUAL */
 .visual {
   /* margin-top: 120px; */
-  background-image: url(/images/visual_bg.jpg);
+  background-image: url(../images/visual_bg.jpg);
   background-position: center;
 }
 
@@ -720,7 +720,7 @@ header .badges .badge {
     /* ************************************************************************* */
     /* RESERVE COFFEE */
     .reserve-coffee {        
-      background-image: url("/images/reserve_bg.jpg");
+      background-image: url("../images/reserve_bg.jpg");
     }
     
     .reserve-coffee .inner { 
@@ -747,7 +747,7 @@ header .badges .badge {
     
     /* PiCK YOUR FAVORITE */
     .pick-your-favorite {
-      background-image: url("/images/favorite_bg.jpg");
+      background-image: url("../images/favorite_bg.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
@@ -779,7 +779,7 @@ header .badges .badge {
     
     /* RESERVE STORE */
     .reserve-store {
-      background-image: url("/images/reserve_store_bg.jpg");
+      background-image: url("../images/reserve_store_bg.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
@@ -836,7 +836,7 @@ header .badges .badge {
     
     /* FIND STORE */
     .find-store {           
-      background-image: url("/images/find_store_bg.jpg");
+      background-image: url("../images/find_store_bg.jpg");
     }
     
     .find-store .inner {
